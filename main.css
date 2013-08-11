@@ -1,0 +1,181 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+
+.bit-box-spacing {
+	padding-right: 0.1em;
+	display: table-cell;
+}
+
+.bit-box {
+	border: 0.1em solid black;
+	width: 2em;
+	text-align: center;
+	display: table-cell;
+}
+
+.bits-box {
+	display: table;
+}
+
+.bits-box-row {
+	display: table-row;
+}
+
+.box-red {
+	background-color: red;
+}
+
+.box-blue {
+	background-color: lightblue;
+}
+
+.box-yellow {
+	background-color: yellow;
+}
+
+.box-white {
+	background-color: white;
+}
+
+#help-table {
+	display: table;
+	margin: 0 auto;
+}
+
+#help {
+	margin-top: 1em;
+	display: table-cell;
+	/*border-left: 0.1em dashed black;
+	padding-left: 0.4em;*/
+}
+
+#help p {
+	text-align: center;
+}
+
+.help-row {
+	display: table-row;
+}
+
+.help-col-spacing {
+	padding-bottom: 0.2em;
+}
+
+.help-col1 {
+	display: table-cell;
+}
+
+.help-col2 {
+	display: table-cell;
+	padding-left: 0.5em;
+	text-align: justify;
+	vertical-align: middle;
+}
+
+#options {
+	display: table-cell;
+}
+
+#options-table {
+	display: table;
+	margin: 0 auto;
+}
+
+.options-row {
+	display: table-row;
+}
+
+.options-col1 {
+	display: table-cell;
+}
+
+.options-col2 {
+	display: table-cell;
+}
+
+#body-title {
+	text-align: center;
+}
+
+#summary {
+	text-align: center;
+}
+
+#calc {
+	/* DO NOT REMOVE */
+}
+
+#calculator-area {
+	border: 0.1em dashed grey;
+	padding: 1.5em;
+	margin: 1em auto;
+	text-align: center;
+	display: table;
+}
+
+.calculator-area-row {
+	display: table-row;
+}
+
+#calculator-input {
+	display: table-cell;
+	vertical-align: middle;
+	padding-right: 1em;
+}
+
+#calculator-input-table {
+	display: table;
+}
+
+.calculator-input-row {
+	display: table-row;
+}
+
+.calculator-input-cell {
+	display: table-cell;
+}
+
+.make-input-space {
+	padding-bottom: 0.8em;
+}
+
+.make-input-btn-wider {
+	width: 6em;
+	height: 2em;
+}
+
+#calculator-input p {
+	margin: 1em;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#calculator-output {
+	clear: both;
+}
+
+.operation {
+	border: 0.1em solid grey;
+	margin-bottom: 0.1em;
+}
+
+.operation-in {
+	border: 0.1em solid grey;
+	margin-bottom: 0.1em;	
+	padding-bottom: 0.5em;
+}
+
+.ceop-text {
+	float: right;
+	cursor: hand;
+	cursor: pointer;
+	font-weight: bold;
+	margin-right: 0.5em;
+}
+
+.op-title {
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: center;
+	margin-left: 0.5em;
+}

@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>BitViz</title>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+		<!-- needed only for generating the parser.js
+		<script type="text/javascript" src="PEG.js"></script>
+		-->
+		<script type="text/javascript" src="parser.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="switchcontent.js"></script>
+		<script type="text/javascript" src="switchicon.js"></script>
+	</head>
+	<body>
+		<h1 id="body-title">BitViz</h2>
+		<p id="summary">... Be able to visualize what happens at the bit level when a computation is run ...</p>
+		<div id="calculator-area">
+			<div id="calculator-area-row">
+				<div id="options">
+					<p>Options</p>
+					<div id="options-table">
+						<div class="options-row">
+							<!--
+							<div class="options-col1">Opt1</div>
+							<div class="options-col2">Yeah</div>
+							-->
+						</div>
+					</div>
+				</div>
+				<div id="calculator-input">
+					<div id="calculator-input-table">
+						<div class="calculator-input-row">
+							<div class="calculator-input-cell">
+								<p>Input the bit query:</p>
+							</div>
+						</div>
+						<div class="calculator-input-row">
+							<div class="calculator-input-cell make-input-space">
+								<input id="calc" type="text"/>
+							</div>
+						</div>
+						<div class="calculator-input-row">
+							<div class="calculator-input-cell">
+								<input class="make-input-btn-wider" type="button" value="Calculate" onclick="bitviz_parse_input();"/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="help">
+					<p>Legend</p>
+					<div id="help-table">
+						<div class="help-row">
+							<div class="help-col-spacing">
+								<div class="help-col1 bit-box box-red">&nbsp;</div>
+							</div>
+							<div class="help-col2">bits of left operand</div>
+						</div>
+						<div class="help-row">
+							<div class="help-col-spacing">
+								<div class="help-col1 bit-box box-blue">&nbsp;</div>
+							</div>
+							<div class="help-col2">bits of right operand</div>
+						</div>
+						<div class="help-row">
+							<div class="help-col-spacing">
+								<div class="help-col1 bit-box box-yellow">&nbsp;</div>
+							</div>
+							<div class="help-col2">new bits</div>
+						</div>
+						<div class="help-row">
+							<div class="help-col-spacing">
+								<div class="help-col1 bit-box box-white">&nbsp;</div>
+							</div>
+							<div class="help-col2">unchanged bits of both operands</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- the output is written here -->
+		<div id="calculator-output">
+		</div>
+	</body>
+</html>
