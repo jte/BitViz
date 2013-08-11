@@ -378,21 +378,21 @@ window.onload = init_calc;
 
 function init_calc() 
 {
-		var addEvent = function(elem, type, fn) { // Simple utility for cross-browser event handling
-			if (elem.addEventListener != null) 
-				elem.addEventListener(type, fn, false);
-			else if (elem.attachEvent != null) 
-				elem.attachEvent('on' + type, fn);
-		},
-		textField = document.getElementById('calc'),
-		placeholder = 'e.g. (2 & 1) * 2 | 1 - ~0'; // The placeholder text
-		textField.value = placeholder;
-		addEvent(textField, 'focus', function() {
-			if (this.value === placeholder) this.value = '';
-		});
-		addEvent(textField, 'blur', function() {
-			if (this.value === '') this.value = placeholder;
-		});
+	var addEvent = function(elem, type, fn) { // Simple utility for cross-browser event handling
+		if (elem.addEventListener != null) 
+			elem.addEventListener(type, fn, false);
+		else if (elem.attachEvent != null) 
+			elem.attachEvent('on' + type, fn);
+	},
+	textField = document.getElementById('calc'),
+	placeholder = 'e.g. (2 & 1) * 2 | 1 - ~0'; // The placeholder text
+	textField.value = placeholder;
+	addEvent(textField, 'focus', function() {
+		if (this.value === placeholder) this.value = '';
+	});
+	addEvent(textField, 'blur', function() {
+		if (this.value === '') this.value = placeholder;
+	});
 };
 function bitviz_parse_input()
 {

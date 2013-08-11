@@ -3,41 +3,17 @@
 	padding: 0;
 }
 
-.bit-box-spacing {
-	padding-right: 0.1em;
-	display: table-cell;
-}
+/* title and summary style */
 
-.bit-box {
-	border: 0.1em solid black;
-	width: 2em;
+#body-title {
 	text-align: center;
-	display: table-cell;
 }
 
-.bits-box {
-	display: table;
+#summary {
+	text-align: center;
 }
 
-.bits-box-row {
-	display: table-row;
-}
-
-.box-red {
-	background-color: red;
-}
-
-.box-blue {
-	background-color: lightblue;
-}
-
-.box-yellow {
-	background-color: yellow;
-}
-
-.box-white {
-	background-color: white;
-}
+/* main area styles */
 
 #help-table {
 	display: table;
@@ -95,13 +71,31 @@
 	display: table-cell;
 }
 
-#body-title {
-	text-align: center;
+#useful-links {
+	display: table-cell;
 }
 
-#summary {
-	text-align: center;
+#useful-links a:link {
+	text-decoration: underline;
+	color: black;
 }
+
+#useful-links a:visited {
+	text-decoration: underline;
+	color: black;
+}
+
+#useful-links a:hover {
+	text-decoration: underline;
+	color: grey;
+}
+
+#useful-links a {
+	text-decoration: underline;
+	color: black;
+}
+
+/* calculator input styles */
 
 #calc {
 	/* DO NOT REMOVE */
@@ -151,6 +145,8 @@
 	font-family: Tahoma, Geneva, sans-serif;
 }
 
+/* calculator output styles */
+
 #calculator-output {
 	clear: both;
 }
@@ -178,4 +174,40 @@
 	font-family: Tahoma, Geneva, sans-serif;
 	text-align: center;
 	margin-left: 0.5em;
+}
+
+.bit-box-spacing {
+	padding-right: 0.1em;
+	display: table-cell;
+}
+
+.bit-box {
+	border: 0.1em solid black;
+	width: 2em;
+	text-align: center;
+	display: table-cell;
+}
+
+.bits-box {
+	display: table;
+}
+
+.bits-box-row {
+	display: table-row;
+}
+
+.box-red {
+	background-color: red;
+}
+
+.box-blue {
+	background-color: lightblue;
+}
+
+.box-yellow {
+	background-color: yellow;
+}
+
+.box-white {
+	background-color: white;
 }
